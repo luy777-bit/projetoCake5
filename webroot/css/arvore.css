@@ -1,0 +1,46 @@
+ul, #myUL{
+	list-style-type: none;
+	font-size: 0.9em;
+	margin:0;
+	padding:0;
+	/*border:1px solid red;*/
+}
+
+#myUL{
+	margin:0;
+	padding:0;
+}
+
+.caret{
+	cursor: pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+
+.caret::before{
+	content: "\2586";
+	color:black;
+	display: inline-block;
+	margin-right:6px;
+}
+
+.caret-down::before{
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	content: "\2587";
+}
+
+.nested{
+	display: none;
+}
+
+.active{
+	display: block;
+}
+
+.idMenu{font-weight: bold;}
+
+.menuInput, .perfilInput{display: none !important;}
